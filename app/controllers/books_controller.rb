@@ -5,6 +5,7 @@ class BooksController < ApplicationController
     respond_to do |format|
       format.html
       format.json {render :json => @books}
+      format.text
     end
   end
 
