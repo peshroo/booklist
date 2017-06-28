@@ -4,8 +4,9 @@ class BooksController < ApplicationController
     @books = Book.all
     respond_to do |format|
       format.html
-      format.json {render :json => @books}
       format.text
+      format.csv
+      format.json {render :json => @books}
     end
   end
 
